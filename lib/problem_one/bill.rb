@@ -15,5 +15,9 @@ module ProblemOne
     def valid?
       features.index{|feature| feature.nil? }.nil?
     end
+
+    def to_json(*a)
+      features.to_json(*a)
+    end
   end
 end

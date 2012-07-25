@@ -18,6 +18,12 @@ describe "a bill" do
     Then { bill.should be_valid }
     Then { bill.should_not be_empty }
     Then { bill.should have(1).features }
+
+    describe "represented as JSON" do
+      Given { good_feature.stub(:to_json).and_return("{\"myfeature\":\"info\"}") }
+      When (:json) { bill.to_json }
+      Then { json.should == "[{\"myfeature\":\"info\"}]" }
+    end
   end
 
   context "with bad features" do
