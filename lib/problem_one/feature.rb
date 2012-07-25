@@ -9,7 +9,7 @@ module ProblemOne
     end
 
     class NullFeature
-
+      def nil?; true; end
     end
   end
 end

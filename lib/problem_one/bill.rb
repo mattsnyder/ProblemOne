@@ -4,16 +4,16 @@ module ProblemOne
   class Bill
     attr_accessor :features
 
+    def empty?
+      features.empty? # If using rails, could use delegate :empty? => :features
+    end
+
     def initialize
       self.features = []
     end
 
-    def empty?
-      true
-    end
-
     def valid?
-      false
+      features.index{|feature| feature.nil? }.nil?
     end
   end
 end
