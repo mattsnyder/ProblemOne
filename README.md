@@ -8,6 +8,6 @@ For each line in the input file, the program should output three pieces of infor
 
 {
   "feature" : "TXT MESSAGING - 250",
-  "date_brange" : "09/29 - 10/28",
+  "date_range" : "09/29 - 10/28",
   "price" : 4.99
 }
