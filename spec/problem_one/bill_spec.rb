@@ -20,4 +20,12 @@ describe "a bill" do
     Then { bill.should have(1).features }
   end
 
+  context "with bad features" do
+    Given (:bill) { ProblemOne::Bill.new }
+    When { bill.features << ProblemOne::Feature.null }
+    Then { bill.should_not be_valid }
+    Then { bill.should_not be_empty }
+    Then { bill.should have(1).features }
+  end
+
 end
