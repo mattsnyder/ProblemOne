@@ -20,3 +20,5 @@ Execute the rake task problem_one:convert_bill_to_json and pass it the path to a
 rake problem_one:convert_bill_to_json[./sample_bill.txt]
 
 All features in the file are grouped into an array in the output.
+
+And yes the regexp could be compacted further, however I left it expanded for readability, which is typically the case when I use regexp. I've found it to be better when working in a team environment.
