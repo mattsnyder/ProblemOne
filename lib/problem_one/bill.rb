@@ -2,11 +2,18 @@ require './lib/problem_one/feature'
 
 module ProblemOne
   class Bill
-    def features
-      [213,56]
+    attr_accessor :features
+
+    def initialize
+      self.features = []
     end
+
     def empty?
       true
+    end
+
+    def valid?
+      false
     end
   end
 end
