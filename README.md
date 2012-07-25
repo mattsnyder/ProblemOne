@@ -11,3 +11,12 @@ For each line in the input file, the program should output three pieces of infor
   "date_range" : "09/29 - 10/28",
   "price" : 4.99
 }
+
+
+Solution
+========
+Execute the rake task problem_one:convert_bill_to_json and pass it the path to a file. For example:
+
+rake problem_one:convert_bill_to_json[./sample_bill.txt]
+
+All features in the file are grouped into an array in the output.
